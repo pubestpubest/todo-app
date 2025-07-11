@@ -8,7 +8,7 @@ on:
       - "v*" # Deploy when a tag like v1.0.0 is pushed
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
