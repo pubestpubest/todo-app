@@ -33,11 +33,11 @@ jobs:
       - name: Install dependencies with pnpm
         run: pnpm install
 
-      - name: List build output
-        run: ls -al dist
-
       - name: Build with Vite
         run: pnpm run build
+
+      - name: List build output
+        run: ls -al dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
